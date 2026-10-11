@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  * {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  
+  /* Refined luxury scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F2EFE8;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #C4B59D;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9A8A70;
+  }
+
+  html.dark ::-webkit-scrollbar-track {
+    background: #181513;
+  }
+  html.dark ::-webkit-scrollbar-thumb {
+    background: #42382D;
+    border-radius: 3px;
+  }
+  html.dark ::-webkit-scrollbar-thumb:hover {
+    background: #5E503F;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  html.dark body {
+    background-color: #12100E;
+    color: #F5F2EB;
+  }
+
+  /* Specific palette dark bases */
+  html.dark[data-theme="green"] body {
+    background-color: #0E1A13;
+  }
+
+  html.dark[data-theme="pink"] body {
+    background-color: #170C11;
+  }
+}
+
+/* Luxury typography utilities */
+.font-display {
+  font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
+}
+
+.font-serif-luxury {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-signature {
+  font-family: 'Great Vibes', 'Cormorant Garamond', 'Playfair Display', cursive, serif;
+}
+
+.font-handwritten {
+  font-family: 'Caveat', 'Playfair Display', cursive, sans-serif;
+}
+
+/* Warm Gold / Brass metallic subtle gradients */
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #C59B4C 50%, #9E742A 100%);
+}
+
+.bg-charcoal-gradient {
+  background: linear-gradient(180deg, #1C1917 0%, #12100E 100%);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #E2BE7A 0%, #C59B4C 50%, #9E742A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Print styling support */
+@media print {
+  body {
+    background-color: white !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

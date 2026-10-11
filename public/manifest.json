@@ -1,0 +1,69 @@
+{
+  "name": "My Week — Personal Weekly Planner & AI Coach",
+  "short_name": "My Week",
+  "description": "A luxury personal weekly planner, habit architecture, academic suite, and goal tracker.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "background_color": "#FDFBF7",
+  "theme_color": "#1C1917",
+  "orientation": "portrait-primary",
+  "categories": ["productivity", "education", "lifestyle"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Active Schedule",
+      "short_name": "Schedule",
+      "description": "View active weekly schedule and tasks",
+      "url": "/?tab=dashboard",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Habit Matrix",
+      "short_name": "Habits",
+      "description": "Track daily atomic habits and streaks",
+      "url": "/?tab=habits",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Monthly Overview",
+      "short_name": "Monthly",
+      "description": "Zoom out to whole month cycles",
+      "url": "/?tab=monthly",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Academic Hub",
+      "short_name": "Academics",
+      "description": "Study hours, exams, and scholarship roadmap",
+      "url": "/?tab=academic",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

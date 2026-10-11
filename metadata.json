@@ -1,0 +1,10 @@
+{
+  "name": "Remix Weekly Planner \u0026 Habit Tracker",
+  "description": "A high-contrast, brutalist weekly planner and habit tracker with customizable themes, day cards, progress charts, and persistent storage.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

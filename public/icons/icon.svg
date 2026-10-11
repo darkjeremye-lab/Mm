@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgGrad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#2D2824" />
+      <stop offset="100%" stop-color="#141210" />
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDF0CD" />
+      <stop offset="25%" stop-color="#E5C158" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="75%" stop-color="#AA822A" />
+      <stop offset="100%" stop-color="#E5C158" />
+    </linearGradient>
+    <linearGradient id="goldBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#AA822A" />
+      <stop offset="50%" stop-color="#FDF0CD" />
+      <stop offset="100%" stop-color="#AA822A" />
+    </linearGradient>
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#D4AF37" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background base with soft rounded corners -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  
+  <!-- Outer Gold Frame -->
+  <rect x="24" y="24" width="464" height="464" rx="88" fill="none" stroke="url(#goldBorder)" stroke-width="4" opacity="0.75"/>
+  <rect x="36" y="36" width="440" height="440" rx="76" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.3"/>
+
+  <!-- Centered Luxury Monogram / Icon Symbol: Roman Pillars & Calendar Arch -->
+  <g filter="url(#goldGlow)">
+    <!-- Architectural Header Bar -->
+    <path d="M120 160 L392 160 L376 136 L136 136 Z" fill="url(#goldGrad)"/>
+    <rect x="130" y="168" width="252" height="6" rx="3" fill="url(#goldGrad)" opacity="0.8"/>
+
+    <!-- Left Pillar -->
+    <rect x="156" y="186" width="28" height="180" rx="6" fill="url(#goldGrad)"/>
+    <!-- Center Pillar / Roman Stylized 'M' & 'W' Nexus -->
+    <path d="M 200 186 L 256 270 L 312 186 L 334 186 L 334 366 L 306 366 L 306 244 L 264 308 L 248 308 L 206 244 L 206 366 L 178 366 L 178 186 Z" fill="url(#goldGrad)"/>
+    <!-- Right Pillar -->
+    <rect x="328" y="186" width="28" height="180" rx="6" fill="url(#goldGrad)"/>
+
+    <!-- Base Plinth -->
+    <rect x="130" y="374" width="252" height="8" rx="4" fill="url(#goldGrad)" opacity="0.8"/>
+    <path d="M116 390 L396 390 L380 412 L132 412 Z" fill="url(#goldGrad)"/>
+  </g>
+
+  <!-- Crown / Star Accent -->
+  <g fill="url(#goldGrad)" transform="translate(256, 108)">
+    <polygon points="0,-16 4,-4 16,0 4,4 0,16 -4,4 -16,0 -4,-4"/>
+  </g>
+</svg>

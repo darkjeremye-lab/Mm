@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgGrad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#2D2824" />
+      <stop offset="100%" stop-color="#141210" />
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDF0CD" />
+      <stop offset="25%" stop-color="#E5C158" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="75%" stop-color="#AA822A" />
+      <stop offset="100%" stop-color="#E5C158" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  <rect x="24" y="24" width="464" height="464" rx="88" fill="none" stroke="#AA822A" stroke-width="4" opacity="0.75"/>
+  <path d="M120 160 L392 160 L376 136 L136 136 Z" fill="url(#goldGrad)"/>
+  <rect x="156" y="186" width="28" height="180" rx="6" fill="url(#goldGrad)"/>
+  <path d="M 200 186 L 256 270 L 312 186 L 334 186 L 334 366 L 306 366 L 306 244 L 264 308 L 248 308 L 206 244 L 206 366 L 178 366 L 178 186 Z" fill="url(#goldGrad)"/>
+  <rect x="328" y="186" width="28" height="180" rx="6" fill="url(#goldGrad)"/>
+  <path d="M116 390 L396 390 L380 412 L132 412 Z" fill="url(#goldGrad)"/>
+</svg>
